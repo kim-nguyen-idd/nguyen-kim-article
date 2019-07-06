@@ -117,7 +117,7 @@ a:hover {
     background-color: var(--link);
 }
 
-ul {
+ul, ol {
     /* top right bottom left */
     margin: 1em 2em 1em 2em;
 }
