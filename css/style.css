@@ -1,0 +1,164 @@
+@import url("https://use.typekit.net/rzu5eiv.css");
+/* COLORS
+highlight: #ff66cc;
+link: #993399;
+contrast: #ff9933;
+
+body text: #333366;
+background colour body page: #f9f9f9;
+accent box: #A5BAF9;
+*/
+
+/* added adobe FONTS 
+sans:
+weights: 400, 700;
+font-family: futura-pt, sans-serif;
+fallback: Impact, 'Arial Narrow Bold'
+
+serif: 
+weights: 400, 700;
+font-family: baskerville-display-pt, serif;
+fallback: Times, Georgia;
+*/
+
+/* CSS VARIABLES */
+
+:root {
+--high: #ff66cc;
+--link: #993399;
+
+--accent: #A5BAF9;
+--backdrop: #f9f9f9; 
+--body-text: #333366;
+--fore: #ff9933;
+
+--serif: baskerville-display-pt, Times, Georgia, serif;
+--sans: futura-pt, Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+/* UNIVERSALS */
+
+body {
+    background-color: var(--backdrop);
+    color: var(--body-text);
+    font-family: var(--serif);
+    /* default: font-size is 1 em, 400 weight, style normal,  */
+    text-align: justify;
+    line-height: 1.75em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 950px;
+}
+
+main {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    line-height: 2em;
+}
+
+section {
+    /* top right bottom left */
+    margin: 1.5em 2em 1.5em 2em;
+    
+}
+
+header, footer { 
+    margin-left: 3em;
+
+}
+
+figure {
+    /* top right bottom left */
+    margin: 1.5em 3em 1em 3em;
+}
+
+h1 {
+    font-family: var(--sans);
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+
+h2 {
+    color: var(--accent);
+    font-family: var(--sans);
+    font-size: 1.5em;
+    margin-top: 1.5em; 
+
+}
+
+h3 {
+    color: var(--link);
+    font-size: 1.25em;
+    font-family: var(--sans);
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+
+}
+
+em {
+    font-style: italic;
+    font-weight: 700;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a {
+    color: var(--high);
+    text-decoration: none;
+}
+
+/* pseudo-class */
+a:hover {
+    background-color: var(--link);
+}
+
+ul {
+    /* top right bottom left */
+    margin: 1em 2em 1em 2em;
+}
+li {
+    font-weight: 700;
+}
+
+figcaption {
+    font-size: 0.90em;
+    font-style: italic;
+}
+
+/* CLASSES */
+
+.published {
+    color: var(--fore); 
+    font-family: var(--sans);
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 2em;
+    
+}
+
+.writer {
+    color: var(--link);
+    font-family: var(--sans);
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-top: 1.25em;
+
+
+}
+
+.end-img{
+    margin: 1.25em 3em 1.25em 3em;;
+}
+
+.connect {
+    background-color: var(--fore);
+    box-shadow: 0.125em 0.125em 0 var(--accent);
+
+}
+
